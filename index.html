@@ -7,120 +7,211 @@
 <meta name="description" content="Job portfolio of Muhammad Atif — E-commerce Specialist with experience in SEO, digital marketing, product listings, order management and customer support. Based in Pakistan, open to remote work.">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  :root{--bg:#0b0e14;--card:#121724;--card2:#171d2e;--red:#e63946;--blue:#2f81f7;--text:#f2f4f8;--muted:#9aa4b5;--line:#232a3d}
+  :root{--bg:#0b0e14;--bg2:#0e1220;--card:#121724;--card2:#171d2e;--red:#e63946;--blue:#2f81f7;--text:#f2f4f8;--muted:#9aa4b5;--line:#232a3d;--green:#2ecc71}
   html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;line-height:1.65;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-  nav{position:sticky;top:0;background:rgba(11,14,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  ::selection{background:var(--red);color:#fff}
+  /* ---------- Nav ---------- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(11,14,20,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;letter-spacing:.4px}
+  .mono{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--red),#8f1d28);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;box-shadow:0 6px 18px rgba(230,57,70,.35)}
   .logo span{color:var(--red)}
-  .nav-links{display:flex;gap:22px;font-size:15px;color:var(--muted)}
+  .nav-links{display:flex;gap:24px;font-size:14.5px;color:var(--muted)}
+  .nav-links a{position:relative;padding:4px 0}
   .nav-links a:hover{color:#fff}
-  .btn{display:inline-block;background:var(--red);color:#fff;padding:10px 22px;border-radius:30px;font-weight:600;font-size:15px;transition:.2s}
-  .btn:hover{background:#c92a38;transform:translateY(-1px)}
-  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
-  .btn.ghost:hover{border-color:var(--red);color:var(--red)}
-  @media(max-width:640px){.nav-links{display:none}}
-  .hero{text-align:center;padding:72px 0 56px;background:radial-gradient(700px 320px at 50% -60px,rgba(47,129,247,.16),transparent 70%)}
-  .avatar{width:148px;height:148px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);box-shadow:0 0 0 6px rgba(47,129,247,.15);background:var(--card2)}
-  .hero h1{font-size:44px;margin:20px 0 6px}
-  .hero h1 span{color:var(--red)}
-  .roles{color:var(--muted);font-size:17px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
-  .tagline{max-width:640px;margin:18px auto 10px;color:var(--muted);font-size:17px}
-  .openbadge{display:inline-block;margin:10px 0 26px;background:rgba(46,204,113,.12);color:#2ecc71;border:1px solid rgba(46,204,113,.4);padding:6px 16px;border-radius:30px;font-size:14px;font-weight:600}
-  .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  section{padding:52px 0}
-  h2{font-size:28px;margin-bottom:8px}
+  .nav-links a:after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:.25s}
+  .nav-links a:hover:after{width:100%}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--red),#c22734);color:#fff;padding:11px 24px;border-radius:12px;font-weight:700;font-size:15px;box-shadow:0 8px 22px rgba(230,57,70,.28);transition:.2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(230,57,70,.4)}
+  .btn.ghost{background:var(--card2);border:1px solid var(--line);box-shadow:none;color:var(--text)}
+  .btn.ghost:hover{border-color:var(--red);color:#fff}
+  .btn.sm{padding:9px 18px;font-size:14px}
+  @media(max-width:760px){.nav-links{display:none}}
+  /* ---------- Hero ---------- */
+  .hero{padding:138px 0 70px;position:relative;background:
+    radial-gradient(640px 380px at 85% 6%,rgba(47,129,247,.16),transparent 65%),
+    radial-gradient(620px 360px at 8% 20%,rgba(230,57,70,.14),transparent 65%),var(--bg)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.4);color:var(--green);font-size:13.5px;font-weight:700;padding:6px 15px;border-radius:30px}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,204,113,.5)}70%{box-shadow:0 0 0 8px rgba(46,204,113,0)}100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}}
+  .hero h1{font-size:56px;line-height:1.08;margin:20px 0 12px;font-weight:900;letter-spacing:-.5px}
+  .hero h1 .grad{background:linear-gradient(92deg,var(--red) 10%,#ff7a68 55%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .role{font-size:19px;font-weight:700;color:var(--text);letter-spacing:2.5px;text-transform:uppercase}
+  .hero .role b{color:var(--red)}
+  .hero p.lead{color:var(--muted);font-size:17px;max-width:520px;margin:18px 0 28px}
+  .hero-btns{display:flex;gap:13px;flex-wrap:wrap}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 18px;min-width:118px}
+  .stat b{display:block;font-size:20px;color:#fff}
+  .stat b em{font-style:normal;color:var(--red)}
+  .stat span{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+  /* photo card */
+  .photo-col{position:relative;display:flex;justify-content:center}
+  .photo-card{position:relative;width:min(360px,88vw)}
+  .photo-card:before{content:'';position:absolute;inset:-14px 14px 14px -14px;border:2px solid var(--red);border-radius:24px;opacity:.55}
+  .photo-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;display:block;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .photo-tag{position:absolute;left:50%;transform:translateX(-50%);bottom:-20px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:10px 20px;text-align:center;box-shadow:0 14px 34px rgba(0,0,0,.5);white-space:nowrap}
+  .photo-tag b{display:block;font-size:16px}
+  .photo-tag span{font-size:12.5px;color:var(--red);font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+  /* ---------- Ticker ---------- */
+  .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:13px 0}
+  .ticker-in{display:flex;gap:44px;white-space:nowrap;color:var(--muted);font-weight:700;letter-spacing:1.6px;font-size:13.5px;text-transform:uppercase;animation:slide 30s linear infinite;width:max-content}
+  .ticker-in span:before{content:'◆';color:var(--red);margin-right:44px;font-size:10px}
+  @keyframes slide{to{transform:translateX(-50%)}}
+  /* ---------- Sections ---------- */
+  section{padding:74px 0 8px}
+  .sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:32px}
+  .sec-num{font-size:15px;font-weight:800;color:var(--red);letter-spacing:2px}
+  h2{font-size:33px;font-weight:850;line-height:1.15}
   h2 span{color:var(--red)}
-  .sub{color:var(--muted);margin-bottom:28px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.2s}
-  .card:hover{border-color:var(--blue);transform:translateY(-3px)}
-  .card .icon{font-size:30px;margin-bottom:10px}
-  .card h3{font-size:19px;margin-bottom:6px}
-  .card p,.card li{color:var(--muted);font-size:15px}
-  .card ul{margin:8px 0 0 18px}
-  .card a.more{color:var(--red);font-weight:600;font-size:14px;display:inline-block;margin-top:10px}
-  .timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:28px;display:flex;flex-direction:column;gap:28px}
-  .job{position:relative}
-  .job:before{content:'';position:absolute;left:-35px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--red)}
-  .job h3{font-size:19px}
-  .job .when{color:var(--blue);font-weight:600;font-size:14px}
-  .job ul{margin:8px 0 0 18px;color:var(--muted);font-size:15px}
-  .chips{display:flex;flex-wrap:wrap;gap:10px}
-  .chip{background:var(--card2);border:1px solid var(--line);padding:8px 16px;border-radius:30px;font-size:14px}
-  .skill-group{margin-bottom:22px}
-  .skill-group h3{font-size:16px;margin-bottom:10px;color:var(--text)}
-  .about-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;color:var(--muted);font-size:16px}
-  .about-box strong{color:var(--text)}
-  .contact{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:40px 24px}
-  .contact p{color:var(--muted);margin:10px auto 24px;max-width:540px}
-  footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 0 40px;border-top:1px solid var(--line);margin-top:52px}
+  .sec-head p{color:var(--muted);margin-left:auto;max-width:380px;font-size:15px}
+  @media(max-width:760px){.sec-head{flex-direction:column;align-items:flex-start}.sec-head p{margin-left:0}}
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+  .panel{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:20px;padding:28px}
+  .panel p{color:var(--muted);font-size:16px}
+  .panel strong{color:var(--text)}
+  .want h3{font-size:17px;margin-bottom:14px}
+  .want ul{list-style:none}
+  .want li{color:var(--muted);font-size:15px;padding:9px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px}
+  .want li:last-child{border-bottom:0}
+  .want li:before{content:'✔';color:var(--green);font-weight:800}
+  /* experience */
+  .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:860px){.exp-grid{grid-template-columns:1fr}}
+  .job{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;overflow:hidden;transition:.2s}
+  .job:hover{transform:translateY(-4px);border-color:rgba(230,57,70,.55)}
+  .job:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--blue))}
+  .job .when{display:inline-block;background:rgba(47,129,247,.12);color:#6db1ff;border:1px solid rgba(47,129,247,.35);font-size:12.5px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+  .job h3{font-size:19.5px;margin-bottom:8px}
+  .job ul{margin-left:18px;color:var(--muted);font-size:14.5px}
+  .job ul li{margin-bottom:5px}
+  .job.feature{grid-column:1/-1;background:linear-gradient(120deg,rgba(230,57,70,.1),var(--card) 55%)}
+  /* skills */
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .skill-panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.2s}
+  .skill-panel:hover{border-color:rgba(47,129,247,.5);transform:translateY(-3px)}
+  .skill-panel .ic{width:46px;height:46px;border-radius:13px;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+  .skill-panel h3{font-size:16.5px;margin-bottom:13px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--card2);border:1px solid var(--line);padding:6px 13px;border-radius:20px;font-size:13px;color:#dbe2ee}
+  .chip.hot{border-color:rgba(230,57,70,.5);color:#ffb3ba}
+  /* projects */
+  .proj-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+  @media(max-width:860px){.proj-grid{grid-template-columns:1fr}}
+  .proj{border-radius:20px;padding:30px;border:1px solid var(--line);position:relative;overflow:hidden}
+  .proj.main{background:linear-gradient(130deg,#1a1023,var(--card) 60%);border-color:rgba(230,57,70,.4)}
+  .proj.side{background:var(--card)}
+  .proj .icon{font-size:34px;margin-bottom:12px}
+  .proj h3{font-size:22px;margin-bottom:8px}
+  .proj p{color:var(--muted);font-size:15px;max-width:520px}
+  .proj a.more{display:inline-flex;margin-top:16px;color:#fff;background:var(--red);padding:9px 18px;border-radius:10px;font-weight:700;font-size:14px}
+  .proj.side a.more{background:var(--card2);border:1px solid var(--line)}
+  /* edu + lang */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.duo{grid-template-columns:1fr}}
+  .edu-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;gap:18px;align-items:flex-start}
+  .edu-card .ic{font-size:32px}
+  .edu-card h3{font-size:18.5px;margin-bottom:4px}
+  .edu-card p{color:var(--muted);font-size:14.5px}
+  .lang-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .lang{flex:1;min-width:120px;background:var(--card2);border:1px solid var(--line);border-radius:13px;padding:12px 14px;text-align:center}
+  .lang b{display:block;font-size:15px}
+  .lang span{font-size:12.5px;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.7px}
+  /* contact */
+  .cta{margin:74px 0 0;background:linear-gradient(120deg,rgba(230,57,70,.16),rgba(47,129,247,.12)),var(--card);border:1px solid rgba(230,57,70,.35);border-radius:26px;padding:48px 30px;text-align:center}
+  .cta h2{margin-bottom:10px}
+  .cta p{color:var(--muted);max-width:540px;margin:0 auto 26px}
+  footer{text-align:center;color:var(--muted);font-size:13.5px;padding:34px 0 42px;margin-top:60px;border-top:1px solid var(--line)}
+  footer b{color:var(--text)}
 </style>
 </head>
 <body>
 
 <nav><div class="wrap nav-in">
-  <div class="logo">MUHAMMAD <span>ATIF</span></div>
+  <div class="logo"><div class="mono">MA</div><div>MUHAMMAD <span>ATIF</span></div></div>
   <div class="nav-links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a>
   </div>
-  <a class="btn" href="#contact">Hire Me</a>
+  <a class="btn sm" href="#contact">Hire Me</a>
 </div></nav>
 
-<header class="hero"><div class="wrap">
-  <img class="avatar" src="profile.jpg" alt="Muhammad Atif">
-  <h1>Muhammad <span>Atif</span></h1>
-  <div class="roles">E-commerce Specialist &nbsp;•&nbsp; SEO &nbsp;•&nbsp; Digital Marketing</div>
-  <p class="tagline">Hands-on e-commerce and digital marketing practitioner with experience managing online stores, product listings and SEO-driven blogs — with strong customer communication skills in Urdu and English.</p>
-  <div><span class="openbadge">● Open to Work — Remote, Pakistan</span></div>
-  <div class="hero-btns">
-    <a class="btn" href="#experience">View My Experience</a>
-    <a class="btn ghost" href="#contact">Contact Me</a>
+<header class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow"><i></i> Open to Work — Remote, Pakistan</span>
+    <h1>Muhammad<br><span class="grad">Atif</span></h1>
+    <div class="role">E-commerce Specialist <b>·</b> SEO <b>·</b> Digital Marketing</div>
+    <p class="lead">Hands-on e-commerce and digital marketing practitioner — I manage online stores, build product listings that sell, and grow traffic with SEO, while communicating confidently with customers in Urdu and English.</p>
+    <div class="hero-btns">
+      <a class="btn" href="#experience">View My Experience</a>
+      <a class="btn ghost" href="#contact">✉️ Contact Me</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2022<em>→</em>Now</b><span>Experience Since</span></div>
+      <div class="stat"><b>4<em>+</em></b><span>Fields of Work</span></div>
+      <div class="stat"><b>3</b><span>Languages</span></div>
+      <div class="stat"><b>1</b><span>Live Store Running</span></div>
+    </div>
+  </div>
+  <div class="photo-col">
+    <div class="photo-card">
+      <img src="photo.jpg" alt="Muhammad Atif">
+      <div class="photo-tag"><b>Muhammad Atif</b><span>E-commerce · SEO · Marketing</span></div>
+    </div>
   </div>
 </div></header>
 
+<div class="ticker"><div class="ticker-in" id="ticker">
+  <span>Product Listings</span><span>Order Management</span><span>SEO</span><span>Keyword Research</span><span>Chat Support</span><span>Data Entry</span><span>Digital Marketing</span><span>Customer Communication</span>
+</div></div>
+
 <section id="about"><div class="wrap">
-  <h2>Professional <span>Summary</span></h2>
-  <p class="sub">Who I am and what I'm looking for</p>
-  <div class="about-box">
-    I'm <strong>Muhammad Atif</strong>, an e-commerce and digital marketing specialist based in
-    <strong>Pakistan</strong>. I have managed and maintained online stores, created and optimized product
-    listings, run SEO-driven blogs, and supported digital marketing activities to improve online visibility
-    and customer engagement. I have practical knowledge of <strong>order management</strong> and online sales
-    processes, and I communicate confidently with customers in <strong>Urdu and English</strong> — including
-    chat support and order confirmation. I am seeking opportunities in
-    <strong>e-commerce operations, order confirmation, chat support, data entry and digital marketing</strong>,
-    preferably work-from-home roles anywhere in Pakistan.
+  <div class="sec-head reveal"><div><div class="sec-num">01 — ABOUT</div><h2>Professional <span>Summary</span></h2></div>
+  <p>A quick look at who I am, what I've done, and what I'm looking for next.</p></div>
+  <div class="about-grid">
+    <div class="panel reveal"><p>I'm <strong>Muhammad Atif</strong>, an e-commerce and digital marketing specialist based in <strong>Pakistan</strong>. I have managed and maintained online stores, created and optimized product listings, run SEO-driven blogs, and supported digital marketing activities to improve online visibility and customer engagement. I have practical knowledge of <strong>order management</strong> and online sales processes, and I communicate confidently with customers in <strong>Urdu and English</strong> — including chat support and order confirmation.</p></div>
+    <div class="panel want reveal"><h3>🎯 What I'm Looking For</h3><ul>
+      <li>E-commerce operations & store management roles</li>
+      <li>Order confirmation & customer support (chat / calls)</li>
+      <li>Data entry & product listing work</li>
+      <li>SEO & digital marketing positions</li>
+      <li>Work-from-home, anywhere in Pakistan</li>
+    </ul></div>
   </div>
 </div></section>
 
 <section id="experience"><div class="wrap">
-  <h2>Work <span>Experience</span></h2>
-  <p class="sub">My professional journey</p>
-  <div class="timeline">
-    <div class="job"><h3>Founder & Store Manager — MAS Trendz (Online Store)</h3><div class="when">2026 — Present</div>
+  <div class="sec-head reveal"><div><div class="sec-num">02 — EXPERIENCE</div><h2>Work <span>Experience</span></h2></div>
+  <p>Real, hands-on work — from blogs and stores to running my own business.</p></div>
+  <div class="exp-grid">
+    <div class="job feature reveal"><span class="when">2026 — Present</span><h3>🏪 Founder & Store Manager — MAS Trendz (Online Store)</h3>
       <ul>
         <li>Running my own live e-commerce store, mastrendz.shop, selling digital and physical products.</li>
-        <li>Managing product listings, pricing, orders, payments verification and customer support on WhatsApp and email.</li>
+        <li>Managing product listings, pricing, orders, payment verification and customer support on WhatsApp and email.</li>
         <li>Handling the complete order cycle myself — from product upload to delivery confirmation.</li>
       </ul></div>
-    <div class="job"><h3>E-commerce & Digital Marketing</h3><div class="when">2023 — 2025</div>
+    <div class="job reveal"><span class="when">2023 — 2025</span><h3>E-commerce & Digital Marketing</h3>
       <ul>
         <li>Managed and maintained e-commerce stores, keeping product listings accurate and up to date.</li>
         <li>Created and optimized product listings (titles, descriptions, images) for better visibility and sales.</li>
         <li>Supported digital marketing campaigns to improve online visibility and customer engagement.</li>
         <li>Applied SEO and content optimization techniques across store pages.</li>
       </ul></div>
-    <div class="job"><h3>Blogging & SEO</h3><div class="when">2022 — 2024</div>
+    <div class="job reveal"><span class="when">2022 — 2024</span><h3>Blogging & SEO</h3>
       <ul>
         <li>Created and managed blogs with a focus on growing organic search traffic.</li>
         <li>Performed keyword research and on-page optimization to improve search rankings.</li>
         <li>Improved content quality and site structure for better search performance.</li>
       </ul></div>
-    <div class="job"><h3>Cryptocurrency Trading (Self-Directed)</h3><div class="when">2025 — Present</div>
+    <div class="job reveal"><span class="when">2025 — Present</span><h3>Cryptocurrency Trading (Self-Directed)</h3>
       <ul>
         <li>Actively learning and practicing crypto trading with a focus on technical analysis and market trends.</li>
         <li>Applying risk management principles and continuous market research.</li>
@@ -129,58 +220,63 @@
 </div></section>
 
 <section id="skills"><div class="wrap">
-  <h2>My <span>Skills</span></h2>
-  <p class="sub">What I can do for your company</p>
-  <div class="skill-group"><h3>🛍️ E-commerce</h3><div class="chips">
-    <span class="chip">Shopify</span><span class="chip">Daraz</span><span class="chip">Product Listings</span>
-    <span class="chip">Order Management</span><span class="chip">Inventory Basics</span><span class="chip">Order Confirmation</span>
-    <span class="chip">Online Store Management</span></div></div>
-  <div class="skill-group"><h3>📣 Digital Marketing & SEO</h3><div class="chips">
-    <span class="chip">SEO (On-Page & Off-Page)</span><span class="chip">Keyword Research</span>
-    <span class="chip">Content Optimization</span><span class="chip">Social Media Management</span>
-    <span class="chip">Blogging</span><span class="chip">Customer Engagement</span></div></div>
-  <div class="skill-group"><h3>🧰 Tools</h3><div class="chips">
-    <span class="chip">MS Excel</span><span class="chip">Google Sheets</span><span class="chip">WordPress</span>
-    <span class="chip">Google Analytics</span><span class="chip">Google Search Console</span>
-    <span class="chip">Canva</span><span class="chip">WhatsApp Business</span></div></div>
-  <div class="skill-group"><h3>💼 Other Skills</h3><div class="chips">
-    <span class="chip">Data Entry & Typing</span><span class="chip">Chat Support</span>
-    <span class="chip">Customer Communication</span><span class="chip">Order Confirmation Calls</span></div></div>
-  <div class="skill-group"><h3>🌐 Languages</h3><div class="chips">
-    <span class="chip">Urdu — Native</span><span class="chip">English — Professional</span><span class="chip">Punjabi — Conversational</span></div></div>
+  <div class="sec-head reveal"><div><div class="sec-num">03 — SKILLS</div><h2>My <span>Skills</span></h2></div>
+  <p>Everything I can bring to your company, grouped by area.</p></div>
+  <div class="skills-grid">
+    <div class="skill-panel reveal"><div class="ic">🛍️</div><h3>E-commerce</h3><div class="chips">
+      <span class="chip hot">Product Listings</span><span class="chip hot">Order Management</span><span class="chip">Shopify</span><span class="chip">Daraz</span><span class="chip">Inventory Basics</span><span class="chip">Order Confirmation</span><span class="chip">Store Management</span></div></div>
+    <div class="skill-panel reveal"><div class="ic">📣</div><h3>Digital Marketing & SEO</h3><div class="chips">
+      <span class="chip hot">SEO (On-Page & Off-Page)</span><span class="chip hot">Keyword Research</span><span class="chip">Content Optimization</span><span class="chip">Social Media Management</span><span class="chip">Blogging</span><span class="chip">Customer Engagement</span></div></div>
+    <div class="skill-panel reveal"><div class="ic">🧰</div><h3>Tools I Use</h3><div class="chips">
+      <span class="chip">MS Excel</span><span class="chip">Google Sheets</span><span class="chip">WordPress</span><span class="chip">Google Analytics</span><span class="chip">Google Search Console</span><span class="chip">Canva</span><span class="chip">WhatsApp Business</span></div></div>
+    <div class="skill-panel reveal"><div class="ic">💼</div><h3>Support & Office</h3><div class="chips">
+      <span class="chip hot">Chat Support</span><span class="chip hot">Data Entry & Typing</span><span class="chip">Customer Communication</span><span class="chip">Order Confirmation Calls</span></div></div>
+  </div>
 </div></section>
 
 <section id="projects"><div class="wrap">
-  <h2>Featured <span>Project</span></h2>
-  <p class="sub">Real work, live online</p>
-  <div class="grid">
-    <div class="card"><div class="icon">🛒</div><h3>MAS Trendz — My Own Online Store</h3>
+  <div class="sec-head reveal"><div><div class="sec-num">04 — PROJECTS</div><h2>Featured <span>Work</span></h2></div>
+  <p>Live proof of my skills — not just claims on a CV.</p></div>
+  <div class="proj-grid">
+    <div class="proj main reveal"><div class="icon">🛒</div><h3>MAS Trendz — My Own Online Store</h3>
       <p>A live e-commerce store I built and run myself: product management, pricing, orders, customer support and digital marketing — complete hands-on proof of my e-commerce skills.</p>
       <a class="more" href="https://mastrendz.shop" target="_blank" rel="noopener">Visit mastrendz.shop →</a></div>
-    <div class="card"><div class="icon">✍️</div><h3>SEO Blogs</h3>
+    <div class="proj side reveal"><div class="icon">✍️</div><h3>SEO Blogs</h3>
       <p>Created and managed blogs from 2022 to 2024 using keyword research, on-page SEO and content improvement to grow organic search traffic and visibility.</p></div>
   </div>
 </div></section>
 
 <section id="education"><div class="wrap">
-  <h2>Education</h2>
-  <p class="sub">My academic background</p>
-  <div class="card"><div class="icon">🎓</div><h3>Intermediate (12th Grade)</h3>
-    <p>Punjab Group of Colleges, Alipur Campus · 2023 — 2025</p></div>
+  <div class="sec-head reveal"><div><div class="sec-num">05 — EDUCATION</div><h2>Education & <span>Languages</span></h2></div></div>
+  <div class="duo">
+    <div class="edu-card reveal"><div class="ic">🎓</div><div><h3>Intermediate (12th Grade)</h3><p>Punjab Group of Colleges, Alipur Campus · 2023 — 2025</p></div></div>
+    <div class="edu-card reveal"><div style="flex:1"><h3 style="margin-bottom:10px">🌐 Languages</h3><div class="lang-row">
+      <div class="lang"><b>Urdu</b><span>Native</span></div>
+      <div class="lang"><b>English</b><span>Professional</span></div>
+      <div class="lang"><b>Punjabi</b><span>Conversational</span></div>
+    </div></div></div>
+  </div>
 </div></section>
 
 <section id="contact"><div class="wrap">
-  <div class="contact">
+  <div class="cta reveal">
     <h2>Let's <span>Work Together</span></h2>
-    <p>I'm available for e-commerce operations, order confirmation, chat support, data entry, SEO and digital marketing roles — remote, anywhere in Pakistan. Reach me by email:</p>
-    <div class="hero-btns">
+    <p>I'm available for e-commerce operations, order confirmation, chat support, data entry, SEO and digital marketing roles — remote, anywhere in Pakistan. The fastest way to reach me is email:</p>
+    <div class="hero-btns" style="justify-content:center">
       <a class="btn" href="mailto:malikatif0125@gmail.com">✉️ malikatif0125@gmail.com</a>
       <a class="btn ghost" href="https://mastrendz.shop" target="_blank" rel="noopener">🛍️ Visit My Store</a>
     </div>
   </div>
 </div></section>
 
-<footer>© 2026 Muhammad Atif · E-commerce Specialist | SEO & Digital Marketing · Pakistan</footer>
+<footer>© 2026 <b>Muhammad Atif</b> · E-commerce Specialist | SEO & Digital Marketing · Pakistan · Portfolio hosted free on GitHub Pages</footer>
 
+<script>
+  // duplicate ticker content for a seamless loop
+  var t=document.getElementById('ticker'); t.innerHTML+=t.innerHTML;
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
 </body>
 </html>
