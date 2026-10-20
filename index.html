@@ -119,6 +119,17 @@
   .proj p{color:var(--muted);font-size:15px;max-width:640px}
   .proj a.more{display:inline-flex;margin-top:16px;color:#fff;background:var(--red);padding:9px 18px;border-radius:10px;font-weight:700;font-size:14px}
   .proj.side a.more{background:var(--card2);border:1px solid var(--line)}
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .cert-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}
+  .cert-card:hover{transform:translateY(-4px);border-color:rgba(230,57,70,.55)}
+  .cert-card img{width:100%;display:block;border-bottom:1px solid var(--line)}
+  .cert-body{padding:22px 24px 24px}
+  .cert-body .when{display:inline-block;background:rgba(47,129,247,.12);color:#6db1ff;border:1px solid rgba(47,129,247,.35);font-size:12.5px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+  .cert-body h3{font-size:19px;margin-bottom:6px}
+  .cert-body p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+  .cert-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  a.cert-btn{display:inline-flex;color:#fff;background:var(--red);padding:9px 18px;border-radius:10px;font-weight:700;font-size:14px}
+  a.cert-verify{color:#6db1ff;font-weight:700;font-size:14px}
   .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   @media(max-width:760px){.duo{grid-template-columns:1fr}}
   .edu-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;gap:18px;align-items:flex-start}
@@ -147,7 +158,7 @@
 <nav><div class="wrap nav-in">
   <div class="logo"><div class="mono">MA</div><div>MUHAMMAD <span>ATIF</span></div></div>
   <div class="nav-links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#services">Services</a><a href="#interests">Interests</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#services">Services</a><a href="#interests">Interests</a>
   </div>
   <a class="btn sm" href="#contact">Hire Me</a>
 </div></nav>
@@ -268,8 +279,27 @@
   </div>
 </div></section>
 
+<section id="certifications"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-num">05 — CERTIFICATIONS</div><h2>Certifications <span>Earned</span></h2></div>
+  <p>Real, verifiable certificates — each one links to the issuer's own website so anyone can check it.</p></div>
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <a href="https://static.semrush.com/academy/certificates/b09f393505/muhammad-atif_25.pdf" target="_blank" rel="noopener"><img src="cert-semrush-seo.png" alt="Semrush Academy SEO Essentials certificate awarded to Muhammad Atif"></a>
+      <div class="cert-body">
+        <span class="when">October 2026</span>
+        <h3>SEO Essentials with Semrush</h3>
+        <p>Issued by Semrush Academy — earned by passing the official SEO Essentials exam.</p>
+        <div class="cert-links">
+          <a class="cert-btn" href="semrush-seo-certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a>
+          <a class="cert-verify" href="https://static.semrush.com/academy/certificates/b09f393505/muhammad-atif_25.pdf" target="_blank" rel="noopener">Verify on Semrush ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
 <section id="education"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">05 — EDUCATION</div><h2>Education & <span>Languages</span></h2></div></div>
+  <div class="sec-head reveal"><div><div class="sec-num">06 — EDUCATION</div><h2>Education & <span>Languages</span></h2></div></div>
   <div class="duo">
     <div class="edu-card reveal"><div class="ic">🎓</div><div><h3>Intermediate (12th Grade)</h3><p>Punjab Group of Colleges, Alipur Campus · 2023 — 2025</p></div></div>
     <div class="edu-card reveal"><div style="flex:1"><h3 style="margin-bottom:10px">🌐 Languages</h3><div class="lang-row">
@@ -281,7 +311,7 @@
 </div></section>
 
 <section id="services"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">06 — SERVICES</div><h2>Services <span>I Offer</span></h2></div>
+  <div class="sec-head reveal"><div><div class="sec-num">07 — SERVICES</div><h2>Services <span>I Offer</span></h2></div>
   <p>Along with jobs, I also take freelance work — here's what I can do for you.</p></div>
   <div class="int-grid">
     <div class="int-card reveal"><div class="ic">🛍️</div><h3>E-commerce Store Management</h3>
@@ -303,7 +333,7 @@
 </div></section>
 
 <section id="interests"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">07 — INTERESTS</div><h2>My <span>Interests</span></h2></div>
+  <div class="sec-head reveal"><div><div class="sec-num">08 — INTERESTS</div><h2>My <span>Interests</span></h2></div>
   <p>Beyond work — the subjects I follow closely and genuinely enjoy.</p></div>
   <div class="int-grid">
     <div class="int-card reveal"><div class="ic">🏛️</div><h3>Politics</h3>
