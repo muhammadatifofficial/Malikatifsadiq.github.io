@@ -195,12 +195,33 @@
   /* Footer: gradient hairline instead of the flat border */
   footer{position:relative;border-top:1px solid transparent}
   footer:before{content:'';position:absolute;top:0;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(230,57,70,.55),rgba(47,129,247,.55),transparent)}
+  /* ==== SOFT STYLE REFRESH (21 Oct 2026) — boss: naram style, sequence, halki animated background ==== */
+  /* Halki si rangon ki harkat: very soft colour clouds drifting slowly behind everything */
+  body:before{content:'';position:fixed;inset:-12%;z-index:-1;pointer-events:none;background:
+    radial-gradient(560px 380px at 12% 8%,rgba(230,57,70,.13),transparent 62%),
+    radial-gradient(680px 460px at 88% 14%,rgba(47,129,247,.15),transparent 62%),
+    radial-gradient(760px 560px at 50% 88%,rgba(124,58,237,.10),transparent 62%),
+    radial-gradient(420px 320px at 78% 62%,rgba(46,204,113,.06),transparent 60%);
+    animation:bgDrift 26s ease-in-out infinite alternate}
+  @keyframes bgDrift{from{transform:translate3d(-1.6%,-1%,0) scale(1)}to{transform:translate3d(1.8%,1.6%,0) scale(1.07)}}
+  /* Naram: rounder corners + softer borders + calmer section rhythm */
+  :root{--line:#25304a}
+  .panel,.job,.skill-panel,.proj,.cert-card,.int-card,.edu-card,.focus{border-radius:22px}
+  .stat,.lang{border-radius:15px}
+  section{padding:82px 0 10px}
+  /* About: quick facts fill the left panel so both columns balance (no blank gap) */
+  .facts{margin-top:16px;border-top:1px dashed var(--line);padding-top:4px}
+  .fact{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line);color:var(--muted);font-size:14.5px}
+  .fact:last-child{border-bottom:0;padding-bottom:0}
+  .fact .fi{font-size:17px;line-height:1.35}
+  .fact b{color:var(--text)}
   /* Respect visitors who prefer less motion */
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto}
     .hero .hero-grid>*{animation:none}
     .reveal{opacity:1;transform:none;transition:none}
     .hero-photo>img,.cert-card img{opacity:1;animation:none;transition:none}
+    body:before{animation:none}
   }
 </style>
 </head>
@@ -247,7 +268,12 @@
   <div class="sec-head reveal"><div><div class="sec-num">01 — ABOUT</div><h2>About <span>Me</span></h2></div>
   <p>One person, many skills — that's how I work.</p></div>
   <div class="about-grid">
-    <div class="panel reveal"><p>I'm <strong>Muhammad Atif</strong>, a self-motivated digital professional based in <strong>Alipur, Muzaffargarh, Punjab, Pakistan</strong>. I work across <strong>e-commerce, SEO, blogging, digital marketing, basic web development, Canva design and crypto trading</strong> — and I use <strong>modern AI tools</strong> to get every job done fast and well. The details of each field are in the sections below.</p></div>
+    <div class="panel reveal"><p>I'm <strong>Muhammad Atif</strong>, a self-motivated digital professional based in <strong>Alipur, Muzaffargarh, Punjab, Pakistan</strong>. I work across <strong>e-commerce, SEO, blogging, digital marketing, basic web development, Canva design and crypto trading</strong> — and I use <strong>modern AI tools</strong> to get every job done fast and well. The details of each field are in the sections below.</p><div class="facts">
+      <div class="fact"><span class="fi">📍</span><div><b>Based in</b> — Alipur, Muzaffargarh, Punjab, Pakistan · fully remote-ready</div></div>
+      <div class="fact"><span class="fi">🎓</span><div><b>Education</b> — Intermediate, Punjab Group of Colleges, Alipur Campus</div></div>
+      <div class="fact"><span class="fi">🗣️</span><div><b>Languages</b> — Urdu (native) · English (professional) · Saraiki (fluent)</div></div>
+      <div class="fact"><span class="fi">⚡</span><div><b>Work style</b> — Multi-skilled and AI-assisted: one person, end to end, fast delivery</div></div>
+    </div></div>
     <div class="panel want reveal"><h3>🎯 What I'm Looking For</h3><ul>
       <li>Any digital role where multiple skills are needed</li>
       <li>E-commerce operations & store management</li>
