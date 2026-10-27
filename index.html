@@ -289,16 +289,26 @@
     .hero-photo>img,.cert-card img{opacity:1;animation:none;transition:none}
     body:before{animation:none}
   }
+
+  /* ==== MULTI-PAGE NAV (27 Oct 2026) — page links stay usable on mobile ==== */
+  @media(max-width:860px){
+    .nav-in{flex-wrap:wrap;gap:8px}
+    .nav-links{display:flex;gap:14px;font-size:13px;overflow-x:auto;white-space:nowrap;width:100%;padding:2px 0}
+    .nav-links a{flex-shrink:0}
+  }
+  .page-head{padding:128px 0 6px;text-align:center}
+  .page-head h1{font-size:42px}
+  .page-head p{color:var(--muted);font-size:16px;margin-top:8px}
+  @media(max-width:560px){.page-head h1{font-size:32px}}
+
 </style>
 </head>
 <body>
 
 <nav><div class="wrap nav-in">
   <div class="logo"><div class="mono">MA</div><div>MUHAMMAD <span>ATIF</span></div></div>
-  <div class="nav-links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#services">Services</a><a href="#interests">Interests</a>
-  </div>
-  <a class="btn sm" href="#contact">Hire Me</a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="certifications.html">Certifications</a></div>
+  <a class="btn sm" href="mailto:malikatif0125@gmail.com">Hire Me</a>
 </div></nav>
 
 <header class="hero"><div class="wrap hero-grid">
@@ -308,7 +318,7 @@
     <div class="role">Digital Professional</div>
     <p class="lead">A <strong style="color:#fff">multi-skilled digital professional</strong> — e-commerce, SEO, blogging, web, design and trading. My strength: I use modern <strong style="color:#fff">AI tools</strong> to get the work done — I even built my own store's website with AI help.</p>
     <div class="hero-btns">
-      <a class="btn" href="#experience">View My Experience</a>
+      <a class="btn" href="experience.html">View My Experience</a>
       <a class="btn ghost" href="Muhammad-Atif-CV.pdf" download>📄 Download CV</a>
     </div>
   </div>
@@ -324,16 +334,14 @@
   <div class="stat"><b>1</b><span>Live Store Running</span></div>
 </div></div>
 </header>
-
 <div class="ticker"><div class="ticker-in" id="ticker">
   <span>E-commerce</span><span>SEO</span><span>Blogging</span><span>Web Development</span><span>AI-Assisted Work</span><span>Canva Design</span><span>Product Listings</span><span>Order Management</span><span>Chat Support</span><span>Data Entry</span><span>Crypto Trading</span><span>Digital Marketing</span>
 </div></div>
-
 <section id="about"><div class="wrap">
   <div class="sec-head reveal"><div><div class="sec-num">01 — ABOUT</div><h2>About <span>Me</span></h2></div>
   <p>One person, many skills — that's how I work.</p></div>
   <div class="about-grid">
-    <div class="panel reveal"><p>I'm <strong>Muhammad Atif</strong>, a self-motivated digital professional based in <strong>Alipur, Muzaffargarh, Punjab, Pakistan</strong>. I work across <strong>e-commerce, SEO, blogging, digital marketing, basic web development, Canva design and crypto trading</strong> — and I use <strong>modern AI tools</strong> to get every job done fast and well. The details of each field are in the sections below.</p><div class="facts">
+    <div class="panel reveal"><p>I'm <strong>Muhammad Atif</strong>, a self-motivated digital professional based in <strong>Alipur, Muzaffargarh, Punjab, Pakistan</strong>. I work across <strong>e-commerce, SEO, blogging, digital marketing, basic web development, Canva design and crypto trading</strong> — and I use <strong>modern AI tools</strong> to get every job done fast and well. The details of each field are on the pages of this portfolio.</p><div class="facts">
       <div class="fact"><span class="fi">📍</span><div><b>Alipur, Pakistan</b> · Remote-ready</div></div>
       <div class="fact"><span class="fi">🎓</span><div><b>Intermediate</b> · PGC Alipur</div></div>
       <div class="fact"><span class="fi">🗣️</span><div><b>Urdu · English · Saraiki</b></div></div>
@@ -355,152 +363,8 @@
       <p>Alongside the store, I actively trade crypto — technical analysis, market structure and disciplined risk management.</p></div></div>
   </div>
 </div></section>
-
-<section id="experience"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">02 — EXPERIENCE</div><h2>Work <span>Experience</span></h2></div>
-  <p>Real, hands-on work — from blogs and stores to running my own business.</p></div>
-  <div class="exp-grid">
-    <div class="job feature reveal"><span class="when">2026 — Present</span><h3>🏪 Founder & Store Manager — MAS Trendz (Online Store)</h3>
-      <ul>
-        <li>Running my own live e-commerce store, mastrendz.shop, selling digital and physical products.</li>
-        <li><strong style="color:#fff">Designed and built the store's complete custom website myself, with the help of AI tools</strong> — pages, features and design.</li>
-        <li>Managing product listings, pricing, orders, payment verification and customer support on WhatsApp and email.</li>
-        <li>Handling the complete order cycle myself — from product upload to delivery confirmation.</li>
-      </ul></div>
-    <div class="job reveal"><span class="when">2023 — 2025</span><h3>E-commerce & Digital Marketing</h3>
-      <ul>
-        <li>Managed and maintained e-commerce stores, keeping product listings accurate and up to date.</li>
-        <li>Created and optimized product listings (titles, descriptions, images) for better visibility and sales.</li>
-        <li>Supported digital marketing campaigns to improve online visibility and customer engagement.</li>
-        <li>Applied SEO and content optimization techniques across store pages.</li>
-      </ul></div>
-    <div class="job reveal"><span class="when">2022 — 2024</span><h3>Blogging & SEO</h3>
-      <ul>
-        <li>Created and managed blogs with a focus on growing organic search traffic.</li>
-        <li>Performed keyword research and on-page optimization to improve search rankings.</li>
-        <li>Improved content quality and site structure for better search performance.</li>
-      </ul></div>
-    <div class="job reveal"><span class="when">2025 — Present</span><h3>Cryptocurrency Trading (Self-Directed)</h3>
-      <ul>
-        <li>Actively learning and practicing crypto trading with a focus on technical analysis and market trends.</li>
-        <li>Applying risk management principles and continuous market research.</li>
-      </ul></div>
-  </div>
-</div></section>
-
-<section id="skills"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">03 — SKILLS</div><h2>My <span>Skills</span></h2></div>
-  <p>Every field I've worked in — with working knowledge of each.</p></div>
-  <div class="skills-grid">
-    <div class="skill-panel reveal"><div class="ic">🤖</div><h3>AI-Assisted Work — My Strength</h3><div class="chips">
-      <span class="chip hot">Building Websites with AI</span><span class="chip hot">AI Tools for Daily Work</span><span class="chip">Content & Design with AI</span><span class="chip">Fast Problem Solving with AI</span><span class="chip">Learning New Tools Quickly</span></div></div>
-    <div class="skill-panel reveal"><div class="ic">🛍️</div><h3>E-commerce</h3><div class="chips">
-      <span class="chip hot">Product Listings</span><span class="chip hot">Order Management</span><span class="chip">Shopify</span><span class="chip">Daraz</span><span class="chip">Inventory Basics</span><span class="chip">Order Confirmation</span><span class="chip">Store Management</span></div></div>
-    <div class="skill-panel reveal"><div class="ic">📣</div><h3>Blogging, SEO & Marketing</h3><div class="chips">
-      <span class="chip hot">Blogging</span><span class="chip hot">SEO (On-Page & Off-Page)</span><span class="chip hot">Keyword Research</span><span class="chip">Content Optimization</span><span class="chip">Social Media Management</span><span class="chip">Customer Engagement</span></div></div>
-    <div class="skill-panel reveal"><div class="ic">🌐</div><h3>Web Development (Basic)</h3><div class="chips">
-      <span class="chip hot">Website Building with AI Help</span><span class="chip">HTML & CSS Basics</span><span class="chip">WordPress</span><span class="chip">Website Setup & Management</span><span class="chip">Store Customization</span></div></div>
-    <div class="skill-panel reveal"><div class="ic">🎨</div><h3>Design & Tools</h3><div class="chips">
-      <span class="chip hot">Canva</span><span class="chip">MS Excel</span><span class="chip">Google Sheets</span><span class="chip">Google Analytics</span><span class="chip">Google Search Console</span><span class="chip">WhatsApp Business</span></div></div>
-    <div class="skill-panel reveal"><div class="ic">💼</div><h3>Support & Office</h3><div class="chips">
-      <span class="chip hot">Chat Support</span><span class="chip hot">Data Entry & Typing</span><span class="chip">Customer Communication</span><span class="chip">Order Confirmation Calls</span></div></div>
-  </div>
-</div></section>
-
-<section id="projects"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">04 — PROJECTS</div><h2>Featured <span>Work</span></h2></div>
-  <p>Live proof of my skills — not just claims on a CV.</p></div>
-  <div class="proj-grid">
-    <div class="proj main reveal"><div class="icon">🛒</div><h3>MAS Trendz — My Own Online Store</h3>
-      <p>A live e-commerce store I run myself: product management, pricing, orders, customer support and digital marketing — complete hands-on proof of my e-commerce skills.</p>
-      <a class="more" href="https://mastrendz.shop" target="_blank" rel="noopener">Visit mastrendz.shop →</a></div>
-    <div class="proj side reveal"><div class="icon">🌐</div><h3>A Website Built by Me — with AI Help</h3>
-      <p>I designed and built the complete custom website for MAS Trendz myself using AI tools — its pages, product system, checkout flow and admin panel. Proof that I can turn an idea into a working website.</p>
-      <a class="more" href="https://mastrendz.shop" target="_blank" rel="noopener">See the website →</a></div>
-    <div class="proj side reveal"><div class="icon">✍️</div><h3>SEO Blogs</h3>
-      <p>Created and managed blogs from 2022 to 2024 using keyword research, on-page SEO and content improvement to grow organic search traffic and visibility.</p></div>
-  </div>
-</div></section>
-
-<section id="certifications"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">05 — CERTIFICATIONS</div><h2>Certifications <span>Earned</span></h2></div>
-  <p>Real, verifiable certificates — each one links to the issuer's own website so anyone can check it.</p></div>
-  <div class="cert-grid">
-    <div class="cert-card reveal">
-      <a href="https://static.semrush.com/academy/certificates/b09f393505/muhammad-atif_25.pdf" target="_blank" rel="noopener"><img src="cert-semrush-seo.png" alt="Semrush Academy SEO Essentials certificate awarded to Muhammad Atif"></a>
-      <div class="cert-body">
-        <span class="when">October 2026</span>
-        <h3>SEO Essentials with Semrush</h3>
-        <p>Issued by Semrush Academy — earned by passing the official SEO Essentials exam.</p>
-        <div class="cert-links">
-          <a class="cert-btn" href="semrush-seo-certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a>
-          <a class="cert-verify" href="https://static.semrush.com/academy/certificates/b09f393505/muhammad-atif_25.pdf" target="_blank" rel="noopener">Verify on Semrush ↗</a>
-        </div>
-      </div>
-    </div>
-    <div class="cert-card reveal">
-      <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=2545771211MA" target="_blank" rel="noopener"><img src="cert-saylor-polsc221.png" alt="Saylor University POLSC221 Introduction to Comparative Politics certificate awarded to Muhammad Atif"></a>
-      <div class="cert-body">
-        <span class="when">October 2026</span>
-        <h3>POLSC221: Introduction to Comparative Politics</h3>
-        <p>Issued by Saylor University — earned by passing the Certificate Final Exam with a grade of 82%.</p>
-        <div class="cert-links">
-          <a class="cert-btn" href="saylor-polsc221-certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a>
-          <a class="cert-verify" href="https://learn.saylor.org/admin/tool/certificate/index.php?code=2545771211MA" target="_blank" rel="noopener">Verify on Saylor ↗</a>
-        </div>
-      </div>
-    </div>
-    <div class="cert-card reveal">
-      <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=8112707488MA" target="_blank" rel="noopener"><img src="cert-saylor-psych101.png" alt="Saylor University PSYCH101 Introduction to Psychology certificate awarded to Muhammad Atif"></a>
-      <div class="cert-body">
-        <span class="when">October 2026</span>
-        <h3>PSYCH101: Introduction to Psychology</h3>
-        <p>Issued by Saylor University — earned by passing the Certificate Final Exam with a grade of 92.31%.</p>
-        <div class="cert-links">
-          <a class="cert-btn" href="saylor-psych101-certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a>
-          <a class="cert-verify" href="https://learn.saylor.org/admin/tool/certificate/index.php?code=8112707488MA" target="_blank" rel="noopener">Verify on Saylor ↗</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div></section>
-
-<section id="education"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">06 — EDUCATION</div><h2>Education & <span>Languages</span></h2></div></div>
-  <div class="duo">
-    <div class="edu-card reveal"><div class="ic">🎓</div><div><h3>Intermediate (12th Grade)</h3><p>Punjab Group of Colleges, Alipur Campus · 2023 — 2025</p></div></div>
-    <div class="edu-card reveal"><div style="flex:1"><h3 style="margin-bottom:10px">🌐 Languages</h3><div class="lang-row">
-      <div class="lang"><b>Urdu</b><span>Native</span></div>
-      <div class="lang"><b>English</b><span>Professional</span></div>
-      <div class="lang"><b>Saraiki</b><span>Fluent</span></div>
-    </div></div></div>
-  </div>
-</div></section>
-
-<section id="services"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">07 — SERVICES</div><h2>Services <span>I Offer</span></h2></div>
-  <p>Along with jobs, I also take freelance work — here's what I can do for you.</p></div>
-  <div class="int-grid">
-    <div class="int-card reveal"><div class="ic">🛍️</div><h3>E-commerce Store Management</h3>
-      <p>Store setup and management, product listings, pricing, order processing and customer support — the complete shop run for you.</p></div>
-    <div class="int-card reveal"><div class="ic">🌐</div><h3>Website Building with AI</h3>
-      <p>Business websites and online stores designed and built with modern AI tools — like the MAS Trendz website I built myself.</p></div>
-    <div class="int-card reveal"><div class="ic">✍️</div><h3>SEO & Blogging</h3>
-      <p>Keyword research, on-page SEO and blog content that improves your Google rankings and grows organic traffic.</p></div>
-    <div class="int-card reveal"><div class="ic">🎨</div><h3>Canva Design</h3>
-      <p>Social media posts, product images, banners and marketing designs made in Canva — clean, fast and on-brand.</p></div>
-    <div class="int-card reveal"><div class="ic">💬</div><h3>Customer Support & Data Entry</h3>
-      <p>Chat support, order confirmation, data entry and listing work — handled carefully in Urdu and English.</p></div>
-    <div class="int-card reveal"><div class="ic">📣</div><h3>Digital Marketing Support</h3>
-      <p>Social media management, campaign support and content optimization to grow your online presence and sales.</p></div>
-  </div>
-  <div style="text-align:center;margin-top:26px" class="reveal">
-    <a class="btn" href="mailto:malikatif0125@gmail.com">✉️ Hire Me for a Service</a>
-  </div>
-</div></section>
-
 <section id="interests"><div class="wrap">
-  <div class="sec-head reveal"><div><div class="sec-num">08 — INTERESTS</div><h2>My <span>Interests</span></h2></div>
+  <div class="sec-head reveal"><div><div class="sec-num">02 — INTERESTS</div><h2>My <span>Interests</span></h2></div>
   <p>Beyond work — the subjects I follow closely and genuinely enjoy.</p></div>
   <div class="int-grid">
     <div class="int-card reveal"><div class="ic">🏛️</div><h3>Politics</h3>
@@ -517,7 +381,6 @@
       <p>Overall, I'm curious about systems — political, economic and digital — and how they're built, run and improved. That curiosity is what pulls me into every new field.</p></div>
   </div>
 </div></section>
-
 <section id="contact"><div class="wrap">
   <div class="cta reveal">
     <h2>Let's <span>Work Together</span></h2>
@@ -530,9 +393,7 @@
     </div>
   </div>
 </div></section>
-
 <footer>© 2026 <b>Muhammad Atif</b> · Multi-Skilled Digital Professional · Pakistan · Portfolio hosted free on GitHub Pages</footer>
-
 <script>
   var t=document.getElementById('ticker'); t.innerHTML+=t.innerHTML;
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
